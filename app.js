@@ -10,6 +10,7 @@ const categoryRouter = require('./routes/categoryRouter');
 const cors = require("cors");
 
 // TIEMPO: 29,5hs
+//Antes de salir a producción genenrar nuevas claves
 
 
 require("dotenv").config();

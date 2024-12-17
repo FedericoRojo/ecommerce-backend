@@ -15,7 +15,7 @@ transaction_amount: 12.34,
 /*
 async function createOrder(req, res){
     try {
-        const client = new MercadoPagoConfig({ accessToken: 'APP_USR-3529746334927669-121009-cfcc767d9ac7b9646d6bfec8674b4281-2148175318' });
+        const client = new MercadoPagoConfig({ accessToken: MERCADOPAGO_PUBLIC_KEY });
         const payment = new Payment(client);
 
        
@@ -94,7 +94,7 @@ async function createOrder(req, res){
     console.log('aca');
     try {
         const client = new MercadoPagoConfig({ 
-            accessToken: 'APP_USR-5099569201338381-121011-1304a3c3a7949dfacd5b9d930cdd4900-2147545242' });
+            accessToken: process.env.MERCADOPAGO_PUBLIC_KEY });
         const preference = new Preference(client);
 
         const body = {
